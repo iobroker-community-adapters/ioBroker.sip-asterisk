@@ -41,9 +41,9 @@ Install this adapter in ioBroker and add the widget to your visualization.
 
 Open the visualization and enter the follwoing data into the popup:
 
-Private Identity: 1060 or 1061
-Public Identity: sip:1060@ipAddress or sip:1061@ipAddress  
-Passwort: password   
+Private Identity: 1060 or 1061   
+Public Identity: sip:1060@ipAddress or sip:1061@ipAddress    
+Passwort: password     
 Anzeigename: arbitrary  
 Realm: ipAddress   
 Websocket Proxy URL: wss://ipAddress:8089/ws
