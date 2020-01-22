@@ -18,17 +18,20 @@ The certificate is valid for 800 days. You can use the "renew-asterisk-cert.sh" 
 ### Activate HTTPS for ioBroker
 
 Execute the ioBoker certificate script from 'scripts/ioBroker':   
-./init-ioBoker-cert.sh
+./init-ioBoker-cert.sh  
+-> Enter the IP address of the device   
 
 Install the created CA certificate in the browser you will use ioBroker with.
 
 The certificate is valid for 800 days. You can use the "renew-ioBroker-cert.sh" to renew the certificate.
 
 Add the certificate and private key in certificate tab in the ioBroker system view.   
-[Certificate tab in the ioBroker system view](img/ioBroker-certs.png)
 
-Configure the Web adapter to activate HTTPS and use the added certificate and private key.   
-[Web adapter configuration](img/web-adapter-config.png)
+![Certificate tab in the ioBroker system view](img/ioBroker-certs.png)
+
+Configure the Web adapter to activate HTTPS and use the added certificate and private key.
+
+![Web adapter configuration](img/web-adapter-config.png)
 
 ## Install the Adapter
 
