@@ -27,7 +27,7 @@
 		"main": "build/main.js",
 		"icon": "icon.png",
 		"enabled": true,
-		"readme": "https://github.com/leftstring/iobroker.sipadapter/blob/master/README.md",
+		"readme": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk/blob/master/README.md",
 		"loglevel": "info",
 		"restartAdapters": [
 			"vis"

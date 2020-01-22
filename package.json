@@ -3,20 +3,19 @@
   "version": "0.9.0",
   "description": "Template for adapter development",
   "author": {
-    "name": "Author",
+    "name": "Sebastian Bäumlisberger und Sebastian Waldmann",
     "email": "author@mail.com"
   },
-  "homepage": "https://github.com/leftstring/iobroker.adapter.asterisk",
+  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk",
   "license": "MIT",
   "keywords": [
     "ioBroker",
-    "template",
     "Smart Home",
     "home automation"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/leftstring/iobroker.adapter.asterisk"
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^1.0.3"
@@ -84,7 +83,7 @@
     "instrument": true
   },
   "bugs": {
-    "url": "https://github.com/Author/ioBroker.template/issues"
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk/issues"
   },
   "readmeFilename": "README.md"
 }
