@@ -1,89 +1,42 @@
 {
-  "name": "iobroker.sipadapter",
-  "version": "0.9.0",
-  "description": "Template for adapter development",
+  "name": "iobroker.vis-sip-asterisk",
+  "version": "0.10.0",
+  "description": "Widget for VIS to enable communication with SIP Asterisk",
   "author": {
     "name": "Sebastian Bäumlisberger und Sebastian Waldmann",
     "email": "author@mail.com"
   },
-  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk",
+  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.vis-sip-asterisk",
   "license": "MIT",
   "keywords": [
     "ioBroker",
     "Smart Home",
-    "home automation"
+    "home automation",
+    "SIP",
+    "asterisk",
+    "vis"
   ],
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --exit"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk"
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.vis-sip-asterisk"
   },
-  "dependencies": {
-    "@iobroker/adapter-core": "^1.0.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@iobroker/testing": "^1.2.6",
-    "@types/chai": "^4.2.3",
-    "@types/chai-as-promised": "^7.1.2",
-    "@types/gulp": "^4.0.6",
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^10.14.21",
-    "@types/proxyquire": "^1.3.28",
-    "@types/sinon": "^7.5.0",
-    "@types/sinon-chai": "^3.2.3",
-    "@typescript-eslint/eslint-plugin": "^2.3.3",
-    "@typescript-eslint/parser": "^2.3.3",
-    "axios": "^0.19.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^6.5.1",
-    "gulp": "^4.0.2",
     "mocha": "^6.2.1",
-    "nyc": "^14.1.1",
     "proxyquire": "^2.1.3",
-    "rimraf": "^3.0.0",
     "sinon": "^7.5.0",
-    "sinon-chai": "^3.3.0",
-    "source-map-support": "^0.5.13",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
+    "sinon-chai": "^3.3.0"
   },
-  "main": "build/main.js",
-  "scripts": {
-    "prebuild": "rimraf ./build",
-    "build:ts": "tsc -p tsconfig.build.json",
-    "build": "npm run build:ts",
-    "watch:ts": "tsc -p tsconfig.build.json --watch",
-    "watch": "npm run watch:ts",
-    "test:ts": "mocha --opts test/mocha.custom.opts",
-    "test:package": "mocha test/package --exit",
-    "test:unit": "mocha test/unit --exit",
-    "test:integration": "mocha test/integration --exit",
-    "test": "npm run test:ts && npm run test:package",
-    "coverage": "nyc npm run test:ts",
-    "lint": "eslint --ext .ts src"
-  },
-  "nyc": {
-    "include": [
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "src/**/*.test.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "text-summary",
-      "html"
-    ],
-    "sourceMap": true,
-    "instrument": true
-  },
+  "main": "widgets/sip-asterisk.html",
   "bugs": {
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk/issues"
+    "url": "https://github.com/iobroker-community-adapters/ioBroker.vis-sip-asterisk/issues"
   },
   "readmeFilename": "README.md"
 }

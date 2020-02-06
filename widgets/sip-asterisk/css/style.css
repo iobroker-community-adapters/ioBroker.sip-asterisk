@@ -1,55 +1,60 @@
-.widget-container {
+.sip-asterisk .widget-container {
 	display: flex;
 	flex-direction: column;
 }
 
-.header {
+.sip-asterisk .header {
 	text-align: center;
 }
 
-.hidden {
+.sip-asterisk .hidden {
 	display: none !important;
 }
 
-.label {
+.sip-asterisk .label {
     display: block;
     width: 100%;
     text-align: center;
 }
 
-#telephone-number-input {
-	width: 100%;
+.sip-asterisk .phone-number-input {
 	height: 48px;
 	box-sizing: border-box;
+	text-align: center;
+	width: calc(100% - 2px);
 }
 
-.button-container {	
-	display: flex; 
-	align-items: center;	
-	justify-content: center; 
+.sip-asterisk .button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding: 32px;
 }
+.sip-asterisk .status-message {
+	width: 100%;
+	text-align: center;
+}
 
-.button-wrapper {
+.sip-asterisk .button-wrapper {
 	flex-grow: 1;
 	display: flex;
-	align-items: center; 
+	align-items: center;
 	justify-content: center;
 }
 
-.button-wrapper button {
+.sip-asterisk .button-wrapper button {
 	padding: 8px;
 }
 
-.button-wrapper i {
+.sip-asterisk .button-wrapper i {
 	vertical-align: middle;
 }
 
-.button-wrapper span {
+.sip-asterisk .button-wrapper span {
 	margin-left: 4px;
 }
 
-#volume-slider {  
+.sip-asterisk .volume-slider {
 	-webkit-appearance: none;
 	background: lightgray;
 	cursor: pointer;
@@ -57,33 +62,23 @@
 	overflow: hidden;
 	outline: none;
 }
-  
-#volume-slider::-webkit-slider-thumb {
+
+.sip-asterisk .volume-slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 0px;
-	height: 0px;
+	width: 0;
+	height: 0;
 	background: dodgerblue;
 	cursor: pointer;
 	box-shadow: -100vw 0 0 100vw dodgerblue;
 }
-  
-#volume-slider::-moz-range-thumb {
-	width: 0px;
-	height: 0px;
+
+.sip-asterisk .volume-slider::-moz-range-thumb {
+	width: 0;
+	height: 0;
 	background: dodgerblue;
 	cursor: pointer;
 	box-shadow: -100vw 0 0 100vw dodgerblue;
 	border: none;
 }
 
-#sipAccountDataDialog {
-	margin: 0px;
-    width: 340px;
-    top: 32px;
-    left: calc(50vw - 150px);
-}
-
-#sipAccountDataDialog input {
-	margin-bottom: 8px;
-}

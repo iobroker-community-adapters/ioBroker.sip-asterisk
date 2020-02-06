@@ -1,17 +1,37 @@
 {
 	"common": {
-		"name": "iobroker.sipadapter",
-		"version": "0.9.0",
+		"name": "vis-sip-asterisk",
+		"version": "0.10.0",
 		"news": {
-			"0.9.0": {
+			"0.10.0": {
 				"en": "initial release",
 				"de": "Erstveröffentlichung"
 			}
 		},
-		"title": "SIP Adapter",
+		"title": "VIS-Widget for SIP Asterisk",
+		"titleLang": {
+			"en": "VIS-Widget for SIP Asterisk",
+			"de": "VIS-Widget für SIP Asterisk",
+			"ru": "VIS-виджет для SIP Asterisk",
+			"pt": "Widget VIS para SIP Asterisk",
+			"nl": "VIS-widget voor SIP Asterisk",
+			"fr": "VIS-Widget pour SIP Asterisk",
+			"it": "Widget VIS per asterisco SIP",
+			"es": "VIS-Widget para SIP Asterisk",
+			"pl": "VIS-Widget dla SIP Asterisk",
+			"zh-cn": "SIP星号的VIS-Widget"
+		},
 		"desc": {
-			"en": "SIP Adapter",
-			"de": "SIP Adapter"
+			"en": "VIS-Widget to enable SIP voice communication with asterisk.",
+			"de": "VIS-Widget zur Aktivierung der SIP-Sprachkommunikation mit Sternchen.",
+			"ru": "VIS-Widget для включения голосовой связи SIP со звездочкой.",
+			"pt": "VIS-Widget para ativar a comunicação de voz SIP com asterisco.",
+			"nl": "VIS-widget om SIP-spraakcommunicatie met asterisk mogelijk te maken.",
+			"fr": "VIS-Widget pour activer la communication vocale SIP avec astérisque.",
+			"it": "VIS-Widget per abilitare la comunicazione vocale SIP con asterisco.",
+			"es": "VIS-Widget para habilitar la comunicación de voz SIP con asterisco.",
+			"pl": "VIS-Widget umożliwiający komunikację głosową SIP z gwiazdką.",
+			"zh-cn": "VIS-Widget可启用带星号的SIP语音通信。"
 		},
 		"authors": [
 			"Sebastian Bäumlisberger",
@@ -19,48 +39,31 @@
 		],
 		"keywords": [
             "SIP",
-			"ioBroker",
-			"Smart Home"			
+			"asterisk",
+			"vis"
 		],
 		"license": "MIT",
 		"platform": "Javascript/Node.js",
-		"main": "build/main.js",
-		"icon": "icon.png",
+		"icon": "vis-sip-asterisk.png",
 		"enabled": true,
-		"readme": "https://github.com/iobroker-community-adapters/ioBroker.sip-asterisk/blob/master/README.md",
+		"extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.vis-sip-asterisk/master/admin/vis-sip-asterisk.png",
+		"readme": "https://github.com/iobroker-community-adapters/ioBroker.vis-sip-asterisk/blob/master/README.md",
 		"loglevel": "info",
 		"restartAdapters": [
 			"vis"
 		],
+		"singleton": true,
 		"localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
-		"mode": "daemon",
+		"mode": "once",
 		"type": "general",
-		"compact": true,
-		"materialize": true,
-		"materializeTab": true,
-		"adminTab": {
-			"singleton": true,
-			"name": {
-				"en": "SIP Adapter",
-				"de": "SIP Adapter"
-			},
-			"link": "",
-			"fa-icon": "info"
-		},
-		"supportCustoms": true,
+		"onlyWWW": true,
+		"noConfig": true,
+		"materialize":  true,
 		"dependencies": [
-			{
-				"js-controller": ">=1.4.2"
-			},
 			"vis"
 		]
 	},
 	"native": {
-		"ipAddress": "",
-		"username": "",
-		"password": "",
-		"asteriskRealm": "",
-		"websocketProxyUrl": ""
 	},
 	"objects": [],
 	"instanceObjects": []
