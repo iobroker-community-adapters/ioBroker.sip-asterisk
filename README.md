@@ -16,6 +16,11 @@ cd node_modules/iobroker.vis-sip-asterisk/scripts/Asterisk
 - Enter the IP address of the device   
 - Confirm further actions
 
+*May be following will be required:*
+```
+sudo chmod 744 install-asterisk.sh  
+```
+
 Install the created CA certificate in the browser you will use asterisk with.
 
 The certificate is valid for 800 days. You can use the `renew-ioBroker-cert.sh` to renew the certificate.
@@ -29,6 +34,11 @@ cd node_modules/iobroker.vis-sip-asterisk/scripts/ioBroker
 ```
 
 - Enter the IP address of the device   
+
+*May be following will be required:*
+```
+sudo chmod 744 init-ioBoker-cert.sh
+```
 
 
 Install the created CA certificate in the browser you will use ioBroker with.
