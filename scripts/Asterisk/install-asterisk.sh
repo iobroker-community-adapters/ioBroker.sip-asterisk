@@ -12,6 +12,7 @@ apt-get install gcc -y
 apt-get install g++ -y
 apt-get install make -y
 apt-get install patch -y
+apt-get install libedit-dev uuid-dev libjansson-dev libxml2-dev libsqlite3-dev -y
 
 # install asterisk
 echo Installing Asterisk...
