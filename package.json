@@ -26,7 +26,7 @@
   "dependencies": {},
   "devDependencies": {
     "@iobroker/testing": "^1.2.6",
-    "chai": "^4.2.0",
+    "chai": "^4.3.0",
     "chai-as-promised": "^7.1.1",
     "eslint": "^6.5.1",
     "mocha": "^6.2.1",
