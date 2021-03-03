@@ -19,7 +19,7 @@ echo Installing Asterisk...
 cd /usr/local/src
 wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-17-current.tar.gz
 tar -zxvf asterisk-17-current.tar.gz
-cd asterisk-17.1.0
+cd asterisk-17.4.0
 contrib/scripts/install_prereq install
 ./configure
 make menuselect.makeopts
